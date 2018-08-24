@@ -14,3 +14,16 @@
 #  redis:
 #    host: localhost
 #    port: 6379
+zuul:
+  routes:
+#    /myProduct/product/list 路由到 /product/product/list
+    myProduct:
+      path: /myProduct/**
+      serviceId: product
+#      获取敏感头
+#      sensitiveHeaders:
+#    简写
+#    product: /myProduct/**
+#    禁止某接口通过zuul调用
+#  ignored-patterns:
+#    - /**/product/list
