@@ -1,4 +1,4 @@
-#spring:
+spring:
 #  datasource:
 #    driver-class-name: com.mysql.jdbc.Driver
 #    url: jdbc:mysql://127.0.0.1:3306/sell?characterEncoding=utf-8&useSSL=false
@@ -11,9 +11,9 @@
 #    password: guest
 #    port: 5672
 #    username: guest
-#  redis:
-#    host: localhost
-#    port: 6379
+  redis:
+    host: localhost
+    port: 6379
 zuul:
 #全部服务忽略敏感头（全部服务都可以传递cookie）
   sensitive-headers:
